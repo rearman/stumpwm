@@ -39,4 +39,4 @@
 (dolist (workspace (cdr *rush/workspaces*))
   (gnewbg workspace))
 
-(eval-command "emacs")
+(start-emacs-client)

@@ -59,3 +59,7 @@
 	       (kill-all-threads)
 	       (eval-command "quit"))
 	      (t (echo "Please enter reboot, shutdown, or quit."))))))
+
+(defcommand start-emacs-client () ()
+  "Run emacsclient, or start it if not running."
+  (run-or-raise "emacsclient -a '' -c" '(:class "Emacs")))
