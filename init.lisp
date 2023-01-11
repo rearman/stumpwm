@@ -38,3 +38,5 @@
 (grename (nth 0 *rush/workspaces*))
 (dolist (workspace (cdr *rush/workspaces*))
   (gnewbg workspace))
+
+(eval-command "emacs")
