@@ -54,7 +54,7 @@
 	       (run-shell-command "reboot"))
 	      ((string= output "shutdown")
 	       (kill-all-threads)
-	       (run-shell-command "halt -p"))
+	       (run-shell-command "doas halt -p"))
 	      ((string= output "quit")
 	       (kill-all-threads)
 	       (eval-command "quit"))

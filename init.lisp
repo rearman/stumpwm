@@ -39,4 +39,4 @@
 (dolist (workspace (cdr *rush/workspaces*))
   (gnewbg workspace))
 
-(start-emacs-client)
+;;(start-emacs-client)
