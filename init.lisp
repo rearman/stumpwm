@@ -28,7 +28,7 @@
       (loop do
 	(progn
 	  (setf *modelineinfo* (run-shell-command "sh ~/.stumpwm.d/modeline.sh" t))
-	  (sleep 20)))))
+	  (sleep 5)))))
 
 ;; turn on the mode line
 (if (not (head-mode-line (current-head)))

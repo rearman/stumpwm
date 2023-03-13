@@ -11,10 +11,11 @@
 (define-key *top-map* (kbd "s-S-Up") "gnext-with-window")
 (define-key *top-map* (kbd "s-S-Down") "gprev-with-window")
 (define-key *top-map* (kbd "s-SPC") "fnext")
-(define-key *top-map* (kbd "s-l") "exec xlock")
+(define-key *top-map* (kbd "s-l") "exec xscreensaver-command --activate")
 (define-key *top-map* (kbd "s-s") "toggle-swank")
 (define-key *top-map* (kbd "s-r") "better-restart")
 
+(define-key *root-map* (kbd "a") "acme")
 (define-key *root-map* (kbd "b") "firefox")
 (define-key *root-map* (kbd "c") "exec st")
 (define-key *root-map* (kbd "C-c") "exec 9 9term")

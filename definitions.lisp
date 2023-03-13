@@ -39,6 +39,10 @@
   "Start Thunderbird or switch to it, if it is already running"
   (run-or-raise "thunderbird" '(:class "Thunderbird")))
 
+(defcommand acme () ()
+  "Start Acme or switch to it, if it is already running"
+  (run-or-raise "acme -a" '(:class "Acme")))
+
 (defcommand better-restart () ()
   (kill-all-threads)
   (eval-command "restart-hard"))
@@ -62,4 +66,4 @@
 
 (defcommand start-emacs-client () ()
   "Run emacsclient, or start it if not running."
-  (run-or-raise "emacsclient -a '' -c" '(:class "Emacs")))
+  (run-or-raise "emacs" '(:class "Emacs")));;"emacsclient -a '' -c" '(:class "Emacs")))
