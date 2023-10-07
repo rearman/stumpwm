@@ -32,7 +32,7 @@
 
 ;; COMMANDS
 (defcommand firefox () ()
-  "Start Forefox or switch to it, if it is already running"
+  "Start Firefox or switch to it, if it is already running"
   (run-or-raise "firefox" '(:class "Firefox")))
 
 (defcommand thunderbird () ()
@@ -41,7 +41,7 @@
 
 (defcommand acme () ()
   "Start Acme or switch to it, if it is already running"
-  (run-or-raise "acme -a" '(:class "Acme")))
+  (run-or-raise "9 acme -a" '(:class "Acme")))
 
 (defcommand better-restart () ()
   (kill-all-threads)

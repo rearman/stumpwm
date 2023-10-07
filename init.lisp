@@ -1,10 +1,8 @@
 (in-package :stumpwm)
 
-(load "~/quicklisp/setup.lisp")
+; (load "~/quicklisp/setup.lisp")
 
-;; set prefix key
-(set-prefix-key (kbd "C-q"))
-(load "~/.stumpwm.d/swank-config.lisp")
+; (load "~/.stumpwm.d/swank-config.lisp")
 (load "~/.stumpwm.d/definitions.lisp")
 (load "~/.stumpwm.d/bindings.lisp")
 
@@ -19,7 +17,7 @@
       *group-format* "%t"
       *time-modeline-string* "%a %d %b %H:%M"
       *screen-mode-line-format*
-      (list "^6[%g]^n "	"%W" "^>" "%S"
+      (list "^6[%g]^n "	"%W" "^>"
 	    '(:eval *modelineinfo*)))
 
 ;; Create some threads that loop forever
@@ -38,5 +36,3 @@
 (grename (nth 0 *rush/workspaces*))
 (dolist (workspace (cdr *rush/workspaces*))
   (gnewbg workspace))
-
-;;(start-emacs-client)
